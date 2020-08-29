@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn src/index.ts",
+    "dev": "sudo ts-node-dev --respawn src/index.ts",
     "start": "tsc && node dist/index.js",
     "publish:patch": "tsc && npm version patch --no-git-tag-version && npm publish",
     "publish:minor": "tsc && npm version minor --no-git-tag-version && npm publish",
@@ -21,7 +21,14 @@
     "url": "https://github.com/pertinate/development/issues"
   },
   "homepage": "https://github.com/pertinate/development#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/http-status-codes": "^1.2.0",
+    "@types/signale": "^1.4.1",
+    "express": "^4.17.1",
+    "http-status-codes": "^2.1.2",
+    "signale": "^1.4.0"
+  },
   "devDependencies": {
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.56",
