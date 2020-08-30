@@ -14,7 +14,10 @@ class Bedrock extends Component<Props, State> {
 
     render(): ReactNode {
         return (
-            <div>Hello World</div>
+            <div>
+                <p>Test</p>
+                <p>Hello World</p>
+            </div>
         );
     }
 }
