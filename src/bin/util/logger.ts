@@ -29,6 +29,9 @@ const options: SignaleOptions = {
 
 const logger = new Signale(options);
 
-logger.config({ displayTimestamp: true });
+logger.config({ displayTimestamp: true, displayFilename: true, displayDate: true, underlineLabel: false });
+
+console.log = logger.debug;
+console.error = logger.error;
 
 export default logger;
